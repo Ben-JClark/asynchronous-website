@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
+
+:root{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+/* HEADER FORMATS */
+.header{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30pt;
+}
+#big_header{
+    font-size: 40pt;
+}
+#home{
+    text-align: left;
+}
+
+
+
+/* GRID FORMAT */
+#top_header{ 
+    grid-area: top-header;
+}
+#left_names{ 
+    grid-area: left-names;
+    background-color: bisque;
+}
+#right_details{ 
+    grid-area: right-details;
+    background-color: blanchedalmond;
+}
+#right_update{
+    grid-area: right-update;
+    background-color: khaki;
+}
+#home_grid{
+    grid-area: home-header;
+}
+
+
+#grid_main{
+    display: grid;
+    grid-template-areas: 
+        'home-header top-header top-header'
+        'left-names right-details right-details'
+        'left-names right-update right-update';
+}
