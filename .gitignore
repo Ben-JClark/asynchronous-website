@@ -1,5 +1,5 @@
 #ignore the config file as it contains the api key
-#config.php
+config.php
 #ignore the connect file as it contains DB connection data
 connect.php
 bfg-1.14.0.jar
