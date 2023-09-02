@@ -1,4 +1,4 @@
 #ignore the config file as it contains the api key
 config.php
 #ignore the connect file as it contains DB connection data
-connect.php
+./php/connect.php
