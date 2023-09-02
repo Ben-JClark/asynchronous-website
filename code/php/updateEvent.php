@@ -15,13 +15,10 @@
     $id = $data['id'];
 
     //get the details of the event with the specific id
-    //$query = "insert into `events` where `id` = '".$id."'";
     $query = "UPDATE events SET name = '$name', category = '$category', time = '$time', day = '$date', cost = '$cost',  location = '$location', notes = '$notes' WHERE id = '$id'";
-    //echo $query;
     $result = $con->query($query);
 
     //send the result back to javascript for debugging
-    
     if($result != FALSE) 
     {
         echo "event data has been successfully updated!";
