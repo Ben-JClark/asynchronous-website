@@ -18,7 +18,7 @@ XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Per
 
 Download and install Xampp on your system https://www.apachefriends.org/download.html
 
-For Linux you will have to
+For Linux you will have to run the commands to:
 Change the permissions to the installer
 
 ```
@@ -30,6 +30,8 @@ Then run the installer
 ```
 sudo ./xampp-linux-*-installer.run
 ```
+
+Then in the setup wizard select both components to install
 
 ### Clone the repository
 
