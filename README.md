@@ -38,19 +38,25 @@ Then in the setup wizard select both components to install
 You will want to clone this repository into the "htdocs" folder in the Xampp directory
 
 ```
-cd ~/xampp/htdocs/
+cd /opt/lampp/htdocs/
 ```
 
 ```
-git clone https://github.com/Ben-JClark/asynchronous-website.git
+sudo git clone https://github.com/Ben-JClark/asynchronous-website.git
 ```
 
 ### Setup the API key
 
 This key will allow you to make 1000 requests per day free of charge
 
-- Sign up to get the free API key from OpenWeather https://openweathermap.org/api
-- Open the file with the directory asynchronous-website/code/php/config.php from the repository you just cloned
+- Create an account at OpenWeather https://openweathermap.org/api
+- Select the "API keys" tab in OpenWeather, you will then see your new key displayed
+- open the config.php file, you could do it using nano
+
+```
+nano /opt/lampp/htdocs/asynchronous-website/code/php/connect.php
+```
+
 - Replace the text in config.php "YOUR_API_KEY_HERE" with your key
 
 ### Setup MySQL database with phpMyAdmin
@@ -69,6 +75,12 @@ by default
 - $passwd = "";
 
 ## Running
+
+In linux to start Xampp, you can run the command
+
+```
+sudo /opt/lampp/lampp start
+```
 
 Assuming you cloned the repository into your htdocs folder, you just need to go to the url
 http://localhost/asynchronous-website/code/index.html
