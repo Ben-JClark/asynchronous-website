@@ -54,23 +54,35 @@ This key will allow you to make 1000 requests per day free of charge
 - open the config.php file, you could do it using nano
 
 ```
-nano /opt/lampp/htdocs/asynchronous-website/code/php/connect.php
+sudo nano /opt/lampp/htdocs/asynchronous-website/code/php/config.php
 ```
 
 - Replace the text in config.php "YOUR_API_KEY_HERE" with your key
 
 ### Setup MySQL database with phpMyAdmin
 
-- Open Xampp and start "Apache" and "MySQL"
+- Open Xampp, you can run the command
+
+```
+sudo /opt/lampp/lampp start
+```
+
 - Navigate to the url http://localhost/phpmyadmin/
-- You will then want to create a database and import the sql file in this repository called "events.sql"
+- You will then want to create a database
+- - Click "New"
+- - Set the name to "322"
+- - Click create
+
+- Now we want to import the tables, select the "import" tab then Browse and select "events.sql"
+  events.sql will be located in /opt/lampp/htdocs/asynchronous-website/events.sql
+- press the import button
 
 ### Connecting phpMyAdmin to the website
 
-In the file connect.php located in the repository code/php/connect.php enter your credentails
-by default
+In the file connect.php located in the repository code/php/connect.php enter your credentails,
+if you don't know what they are just leave the default entries
 
-- $dsn = "mysql:host=localhost;dbname=YOUR_DB_NAME"; just replace YOUR_DB_NAME with the name of the database you created in phpMyAdmin
+- $dsn = "mysql:host=localhost;dbname=322";
 - $user = "root";
 - $passwd = "";
 
@@ -82,5 +94,5 @@ In linux to start Xampp, you can run the command
 sudo /opt/lampp/lampp start
 ```
 
-Assuming you cloned the repository into your htdocs folder, you just need to go to the url
+Now the website is up, you can view it in your url
 http://localhost/asynchronous-website/code/index.html
