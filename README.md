@@ -49,10 +49,9 @@ This key will allow you to make 1000 requests per day free of charge
 In the file connect.php located in the repository code/php/connect.php enter your credentails
 by default
 
+- $dsn = "mysql:host=localhost;dbname=YOUR_DB_NAME"; just replace YOUR_DB_NAME with the name of the database you created in phpMyAdmin
 - $user = "root";
 - $passwd = "";
-- $dsn = "mysql:host=localhost;dbname=YOUR_DB_NAME";
-  just replace YOUR_DB_NAME with the name of the database you created in phpMyAdmin
 
 ## Running
 
