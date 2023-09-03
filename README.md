@@ -2,6 +2,10 @@
 
 UOW Web Development paper for third year students. The first assignment tasked with building an asynchronous website using HTML, CSS, JavaScript, DHTML, PHP, MySQL database, AJAX, Fetch, and external API's. The website must display information about local events obtained from MySQL DB and display the weather fetched from openweathermap.org/api.
 
+# issues
+
+getEvents.php returns an internal server error, this fails to load the local events
+
 # how to run this for yourself
 
 ## Setup
@@ -79,7 +83,7 @@ sudo /opt/lampp/lampp start
 
 ### Connecting phpMyAdmin to the website
 
-In the file connect.php located in the repository code/php/connect.php enter your credentails,
+In the file /opt/lampp/htdocs/asynchronous-website/code/php/connect.php enter your credentails,
 if you don't know what they are just leave the default entries
 
 - $dsn = "mysql:host=localhost;dbname=322";
