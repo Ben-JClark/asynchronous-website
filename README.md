@@ -16,7 +16,7 @@ UOW Web Development paper for third year students. The first assignment tasked w
 
 XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl.
 
-Download and install Xampp on your system (https://www.apachefriends.org/download.html)[https://www.apachefriends.org/download.html]
+Download and install Xampp on your system https://www.apachefriends.org/download.html
 
 ### Clone the repository
 
@@ -34,14 +34,14 @@ git clone https://github.com/Ben-JClark/asynchronous-website.git
 
 This key will allow you to make 1000 requests per day free of charge
 
-- Sign up to get the free API key from OpenWeather (https://openweathermap.org/api)[https://openweathermap.org/api]
+- Sign up to get the free API key from OpenWeather https://openweathermap.org/api
 - Open the file with the directory asynchronous-website/code/php/config.php from the repository you just cloned
 - Replace the text in config.php "YOUR_API_KEY_HERE" with your key
 
 ### Setup MySQL database with phpMyAdmin
 
 - Open Xampp and start "Apache" and "MySQL"
-- Navigate to the url (http://localhost/phpmyadmin/)[http://localhost/phpmyadmin/]
+- Navigate to the url http://localhost/phpmyadmin/
 - You will then want to create a database and import the sql file in this repository called "events.sql"
 
 ### Connecting phpMyAdmin to the website
